@@ -1,4 +1,4 @@
-# Sass Starter Pack
+# Pixel Perfect Health Insurance Comparison HTML SASS
 
 A light package for compiling Sass and running a dev server
 
