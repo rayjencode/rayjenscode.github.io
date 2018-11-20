@@ -1,0 +1,56 @@
+button:focus{
+    outline: none;
+}
+
+
+@media(max-width: 576px){
+    form{
+        margin-top: 2rem;
+    }
+}
+
+.nav-menu{
+    &__checkbox{
+        display: none;
+    }
+    &__icon{
+        position: relative;
+        top: 10px;
+        &,
+        &::before,
+        &::after{
+            width: 1.5rem;
+            height: 1px;
+            display: inline-block;
+            background-color: $secondary;
+        }
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .1s;
+        }
+
+        &::before{top: -7px;}
+        &::after{top: 7px;}
+    }
+
+    &__checkbox:checked +
+    &__toggler &__icon{
+        background-color: transparent;
+    }
+
+    &__checkbox:checked +
+    &__toggler &__icon::before{
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked +
+    &__toggler &__icon::after{
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

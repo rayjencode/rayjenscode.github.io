@@ -1,0 +1,104 @@
+
+.faq .card-body{
+    color: #505050;
+}
+.faq .card-header{
+    padding: .9rem 1.3rem;
+    border-radius: 3px;
+    background-color: white;
+    transition: all .4s;
+    .faq__title{
+        color: $default;
+    }
+
+    i{
+        color: $primary;
+    }
+    
+}
+
+
+.faq .card-header:not(.collapsed) {
+    background-color: $secondary;
+    .faq__title{
+        color: white;
+    }
+    i{
+        color: white;
+        transform: rotate(180deg);
+    }
+    
+    
+}
+
+.faq .card-header:hover{
+    background-color: $secondary;
+    .faq__title{
+        color: white;
+    }
+    i{
+        color: white;
+    }
+}
+
+.faq__heading{
+    text-align: center;
+    font-weight: 700;
+}
+
+.faq-rating{
+    border: 1px solid $light;
+    border-radius: 5px;
+    overflow: hidden;
+    &__badge{
+        width: 220px;
+        height: auto;
+        text-align: center;
+        padding: 10px 0;
+        overflow: hidden;
+        &--heading{
+            color: white;
+            margin-bottom: 0;
+        }
+        &--rate{
+            color: white;
+            font-weight: 100;
+            font-size: 3rem;
+            margin-bottom: 0;
+            sup{
+                font-size: 2rem;
+            }
+        }
+        i{
+            color: #efce4a;
+        }
+
+        @media(max-width: 576px){
+            width: 100%;
+        }
+    }
+    &__review{
+        &--person{
+            color: #4a4a4a;
+        }
+        p{
+            color: #5b5b5b;
+        }
+
+        @media(max-width: 576px){
+            margin-top: 10px;
+        }
+    }
+
+    
+    @media(max-width: 576px){
+        display: block;
+    }
+    
+}
+
+
+
+
+
+

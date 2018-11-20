@@ -1,0 +1,42 @@
+.hero{
+    width: 100%;
+    background: url('../img/hero-bg2.png');
+    background-size: cover;
+    background-position: top;
+    &__scrolldown{
+        width: 100%;
+        font-size: 1.2rem;
+        a{
+            color: $secondary;
+            background-color: white;
+            padding: 6px 10px;
+            border-radius: 50px;
+            transition: all 1s;
+        }
+        a:hover{
+            background-color: rgba($secondary, 0.3);
+            color: white;
+        }
+    }
+}
+
+.hero-content{
+    &__heading{
+        padding: 4rem 0;
+    }
+
+    &__cta{
+        display: flex;
+        align-items: center;
+        span{
+            padding: 0 10px;
+        }
+        a{
+            color: $secondary;
+        }
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
